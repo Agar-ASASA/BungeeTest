@@ -1,0 +1,56 @@
+server_connect_timeout: 5000
+remote_ping_cache: -1
+custom_server_name: HexaCord
+forge_support: false
+always_handle_packets: false
+player_limit: -1
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+timeout: 30000
+log_commands: false
+online_mode: false
+servers:
+  test:
+    motd: '&1Just another Waterfall - Forced Host'
+    address: 64.40.8.51:25577
+    restricted: false
+  lobby:
+    motd: '&1Just another Waterfall - Forced Host'
+    address: 199.127.62.5:25609
+    restricted: false
+listeners:
+- query_port: 25566
+  motd: '&1Another Bungee server'
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  proxy_protocol: false
+  forced_hosts:
+    pvp.md-5.net: pvp
+  ping_passthrough: false
+  priorities:
+  - lobby
+  bind_local_address: true
+  host: 0.0.0.0:25577
+  max_players: 1
+  tab_size: 60
+  force_default_server: false
+remote_ping_timeout: 5000
+ip_forward: true
+network_compression_threshold: 256
+prevent_proxy_connections: false
+disabled_commands:
+- disabledcommandhere
+connection_throttle: 4000
+stats: 4ab22809-d9dc-42ac-93f6-01e01e93ea26
+connection_throttle_limit: 3
+groups:
+  md_5:
+  - admin
+log_pings: true
